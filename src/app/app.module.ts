@@ -12,7 +12,7 @@ import { CourseListComponent } from './courses/course-list.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
