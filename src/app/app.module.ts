@@ -1,3 +1,4 @@
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; 
@@ -13,6 +14,7 @@ import { ReplacePipe } from './pipe/replace.pipe';
     CourseListComponent,
     StarComponent,
     ReplacePipe,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
