@@ -17,4 +17,8 @@ export class CourseInfoComponent implements OnInit {
 
     }
 
+    save(): void {
+        this.courseService.save(this.course);
+    }
+
 }
