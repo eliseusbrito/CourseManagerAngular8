@@ -20,13 +20,14 @@ export class CourseService {
         return this.httpClient.get<Course>(`${this.courseUrl}/${id}`);
     }
 
-    // save(course: Course): void {
-    //     if (course.id) {
-    //         const index = COURSES.findIndex((courseIterator: Course) => courseIterator.id === course.id);
-    //         COURSES[index] =  course;
-    //     }
-    // }
+    save(course: Course): Observable<Course> {
+        if (course.id) {
+            return this.httpClient.put<Course>(`${this.courseUrl}/${course.id}`, course);
+        } else {
+            return this.httpClient.post<Course>(`${this.courseUrl}`, course);
+        }
 
+    }
 }
 
 // var COURSES: Course[] = [
