@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
+import { Component, Input, OnChanges} from "@angular/core";
 
 @Component({
     selector: 'app-star',
@@ -10,10 +10,10 @@ export class StarComponent implements OnChanges {
     @Input()
     rating: number = 0;
 
-    starwidth: number;
+    starWidth: number;
 
     ngOnChanges(): void {
-        this.starwidth = this.rating * 74 / 5;
+        this.starWidth = this.rating * 74 / 5;
     }
 
 }
